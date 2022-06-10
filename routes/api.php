@@ -17,4 +17,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 //main login
-Route::post('userInfo', [\App\Http\Controllers\Api\styController::class, 'getUserInfo']);
+Route::get('userInfo', [\App\Http\Controllers\Api\styController::class, 'getUserInfo']);
