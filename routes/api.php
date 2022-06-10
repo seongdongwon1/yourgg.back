@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\styController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -18,4 +17,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 //main login
-Route::get('sty-test-func', [\App\Http\Controllers\Api\styController::class, 'getStyTestFunc']);
+Route::post('userInfo', [\App\Http\Controllers\Api\styController::class, 'getUserInfo']);
